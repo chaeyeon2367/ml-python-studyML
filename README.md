@@ -1,7 +1,7 @@
 <br/>
 <br/>
 
-# ML-python-studyML
+# ML-python-studyML 🤖 
 : Study and practice various machine learning models
 
 <br/>
