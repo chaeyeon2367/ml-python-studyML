@@ -14,3 +14,10 @@
 
 
 ### 2. KNN : k-Nearest neighborhood
+
+- select Distance d(a,b)
+  * Categorical variables
+     : Hamming distance
+     
+  * Continuous variables
+     : Euclidian distance, Manhattan distance
