@@ -21,3 +21,7 @@
      
   * Continuous variables
      : Euclidian distance, Manhattan distance
+
+
+
+### 6. Neural Network
