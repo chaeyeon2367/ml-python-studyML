@@ -128,7 +128,88 @@
       - Takes a long time to build the model
    
    
-   
 <br/>
+
+### 5. Decision Tree
+
+- 5-1. Definition 
+ 
+   : A model that creates a criterion of variables and uses them to categorize a sample, and then estimates the properties of the categorized group.
+
+  - Advantages: highly interpretable, intuitive, universal.
+  - Disadvantages: high volatility. Can be sensitive to sample. 
+
+- 5-2. Decision tree terminology
+
+<br/>
+<img width="315" alt="Capture d’écran 2023-04-17 à 14 45 20" src="https://user-images.githubusercontent.com/63314860/232487938-a21315ce-fbe6-45c2-bb1b-bd9b3ce036cc.png">
+<br/>
+
+   - Node - The location of the variable on which the classification is based. Divide the sample based on this.
+
+      - Parent node - a relative concept. Parent node.
+      - Child node - Lower node.
+      - Root node - The top-level node with no child nodes.
+      - Leaf node (Tip) - The lowest node with no children.
+      - Internal node - a node that is not a Leaf node.
+
+   - Edge - Where the conditions that categorize the samples are located.
+   - Depth - the number of edges that must be traversed to reach a particular node from the Root node.
+   
+   - Depending on the response variable
+   
+      - Categorical variables : Classification tree
+      - Continuous Variables  : Regression Tree (Estimate the category of y from its mean value)
+
+<br/>
+<img width="1027" alt="Capture d’écran 2023-04-17 à 14 46 40" src="https://user-images.githubusercontent.com/63314860/232488226-46f27242-0059-4ded-b715-000d40d5349e.png">
+<br/>
+
+- 5-3. Entropy
+
+  - Entropy is often used as a criterion to select the best attribute for splitting a node in the tree.
+  
+  - The attribute that maximizes the information gain, which is the reduction in entropy achieved by splitting the node according to that attribute, is chosen as the best attribute.
+  
+  - The entropy of a set S with respect to a binary classification problem is given by the following formula:  
+         <img width="345" alt="Capture d’écran 2023-04-17 à 15 14 12" src="https://user-images.githubusercontent.com/63314860/232494687-85ffc913-bd73-44ac-8414-4c6679e22487.png">
+
+
+- 5-3. Information Gain
+
+  - Entropy difference before and after a particular node in a decision tree.
+  
+  - A higher information gain indicates that the attribute can split the dataset into more homogeneous subsets, making the classification task easier. Conversely, a lower information gain indicates that the attribute is less useful for classification.
+  
+      <img width="926" alt="Capture d’écran 2023-04-17 à 15 25 40" src="https://user-images.githubusercontent.com/63314860/232497603-11c937ed-77c2-4f72-a16e-139207bf28d7.png">
+  
+
+- 5-4. classification Tree
+
+  - According to the Tree condition. The idea of dividing the area that X can have into blocks.
+
+  - Estimate Y from the attributes of the samples in the blocked region.
+  
+  <img width="866" alt="Capture d’écran 2023-04-17 à 15 32 42" src="https://user-images.githubusercontent.com/63314860/232499520-6be25d89-1b13-4d24-9efb-d6e95a065e2c.png">
+
+  - For the areas divided, select the variables and criteria that give the best values for the measure below.
+
+     - Entropy
+
+     - Misclassification rate
+  
+       <img width="493" alt="Capture d’écran 2023-04-17 à 15 36 07" src="https://user-images.githubusercontent.com/63314860/232500457-1e2dcac8-106a-4996-8a67-afacb5d05efd.png">
+
+     - Gini index
+  
+       <img width="478" alt="Capture d’écran 2023-04-17 à 15 36 37" src="https://user-images.githubusercontent.com/63314860/232500606-e9199e02-fc8e-447c-9196-299cb8257f10.png">
+  
+  - For a determined R<sub>m</sub>, 
+     
+      <img width="361" alt="Capture d’écran 2023-04-17 à 15 42 04" src="https://user-images.githubusercontent.com/63314860/232501931-af4b3159-5e78-455b-9c86-5cee0e38ff92.png">
+     
+     - the category of estimated Y : 
+       
+       <img width="242" alt="Capture d’écran 2023-04-17 à 15 42 12" src="https://user-images.githubusercontent.com/63314860/232501966-17d29abf-8fdd-4341-a28a-e8fdb0eed249.png">
 
 ### 6. Neural Network
