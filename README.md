@@ -103,7 +103,23 @@
              - Points that fall within the margin, or are categorized in the opposite direction.
          - SVR
              - Points that are outside the margin. 
-   
+
+- 4-2. SVM with Kernel
+
+    - For non-linear relationships
+    - The curse of dimensionality
+      - When fitting data with a non-linear structure, it is necessary to use a kernel.
+      - However, as the dimensionality of the dth-degree polynomial increases, above a certain dimensionality, the number of parameters that need to be estimated increases, resulting in higher test errors.
+      - 
+- 4-3. SVM vs. LDA
+   - Relative Advantages of SVM
+      - When the data distribution is difficult, it is inefficient to consider the covariance structure.    
+            - Only observations near the boundary can be considered.
+      - Higher prediction accuracy. 
+      
+   - Relative disadvantages of SVM
+      - Need to determine C
+      - Takes a long time to build the model
    
    
    
