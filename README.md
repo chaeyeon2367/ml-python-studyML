@@ -57,12 +57,56 @@
      <img width="1071" alt="Capture d’écran 2023-04-15 à 15 49 07" src="https://user-images.githubusercontent.com/63314860/232228009-d66c9be1-8f92-48b0-bb2d-ffcd85a97e50.png">
     
     - Relative advantages of QDA
-        - y Allows for different covariance structures for different categories.
+       
+       - y Allows for different covariance structures for different categories.
+       
     - Relative disadvantages of QDA
-        - If you have a large number of explanatory variables, there are more parameters to estimate
-                
-           - Requires a large sample size
+       
+       - If you have a large number of explanatory variables, there are more parameters to estimate
+                - Requires a large sample size
 
+<br/>
+
+### 4. SVM : Support Vector Machine 
+
+- 4-1. Background 
+
+   - When assumptions about the distribution of data are hard to make, how do you split the data below?
+
+     - focus on the boundary
+     - determine the boundary that maximizes the margin as shown below. 
+   <br/>
+   <img width="388" alt="Capture d’écran 2023-04-17 à 02 49 14" src="https://user-images.githubusercontent.com/63314860/232354109-27210622-7360-4539-b0ff-82ed02014c38.png">
+
+   - Problem
+     - What if there are cases that are not exactly distinct?
+
+        => Allow a small amount of error and determine the boundary to minimize it
+ 
+   <img width="393" alt="Capture d’écran 2023-04-17 à 02 51 25" src="https://user-images.githubusercontent.com/63314860/232354271-6513431c-c8d1-416b-9840-c17f0e3dd2c6.png">
+   
+
+   - The dependent variable is divided into two categories based on the form of the data.
+
+     - Categorical variables
+        - Support vector classifier
+     - Continuous variables
+        - Support vector regression (SVR)
+       
+   <br/>
+   <img width="750" alt="Capture d’écran 2023-04-17 à 02 56 25" src="https://user-images.githubusercontent.com/63314860/232354648-1591620b-8670-44d7-9a37-7e494b45cb1c.png">
+
+   - Key to SVM, SVR
+      - Distinguish between what will and will not affect model cost with margins
+
+         - SVM 
+             - Points that fall within the margin, or are categorized in the opposite direction.
+         - SVR
+             - Points that are outside the margin. 
+   
+   
+   
+   
 <br/>
 
 ### 6. Neural Network
