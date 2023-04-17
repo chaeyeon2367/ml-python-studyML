@@ -211,5 +211,18 @@
      - the category of estimated Y : 
        
        <img width="242" alt="Capture d’écran 2023-04-17 à 15 42 12" src="https://user-images.githubusercontent.com/63314860/232501966-17d29abf-8fdd-4341-a28a-e8fdb0eed249.png">
+      
+ - 5-5. Regression Tree
+          
+   <img width="1106" alt="Capture d’écran 2023-04-17 à 15 51 26" src="https://user-images.githubusercontent.com/63314860/232504500-f52cb623-bc10-4ab4-b058-c70b4b8e4008.png">
+   
+   
+   - Estimated value of Y:
+   
+      <img width="387" alt="Capture d’écran 2023-04-17 à 15 52 37" src="https://user-images.githubusercontent.com/63314860/232504765-e288ebd2-f0f5-4949-a5f2-d9d3ce08aa10.png">
+
+   - For a determined R<sub>m</sub>,  
+
+     <img width="390" alt="Capture d’écran 2023-04-17 à 15 57 11" src="https://user-images.githubusercontent.com/63314860/232506039-068729b8-c21c-4bce-b215-a14e694102db.png">
 
 ### 6. Neural Network
